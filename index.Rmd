@@ -8,3 +8,13 @@ And I can put all kinds of stuff on it!
 
 Adding additional text. 
 
+
+### Add some links
+
+I like [google](https://www.google.com). 
+
+I can link direction to my [about page](about.html).
+
+## Picture embedded 
+
+<img src="images/machu.jpg" style="width:75%">
