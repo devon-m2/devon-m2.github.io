@@ -1,23 +1,27 @@
 ---
-title: "Holy cow!"
+title: "Devon Morgan"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
-### I have a webpage!
+MS in Epidemiology Candidate, Columbia University Mailman School of Public Health
 
-And I can put all kinds of stuff on it!
+# About
 
-Adding additional text. 
+I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins in 2016 with a BA in Biology (minor in Pyschology). 
 
-
-### Add some links
 
 I like [google](https://www.google.com). 
 
 I can link direction to my [about page](about.html).
+
+
+# Contact Information
+
+Devon Morgan
+Email: dm3175@columbia.edu
 
 ## Picture embedded 
 
@@ -26,3 +30,7 @@ I can link direction to my [about page](about.html).
 ## Added Code
 
 My code page is [code page](code.html).
+
+# Added plotly
+
+This page has [plotly graphs](plotly.html).
