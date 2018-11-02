@@ -10,15 +10,12 @@ Master of Science (MS) in Epidemiology Candidate, Columbia University Mailman Sc
 
 # About
 
-I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins University in 2016 with a BA in Biology (minor in Pyschology). 
+I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins University in 2016 with a BA in Biology (minor in Pyschology). I pursued an interdisciplinary course of study focused on molecular and cellular biology, psychology and public health. Undergraduate coursework included cell biology, genetics, microbiology, developmental biology, biochemistry, organic chemistry, behavioral endocrinology, human nutrition, outbreak investigations, cognitive development and neuropsychology, statistics and calculus.
 
 Following graduation, I worked for two years as a Health Sciences Analyst at ICF, a technical consulting firm. The Health Sciences Practice (within the Data Science and Survey Research Division) provides epidemiological, toxicological, risk and exposure assessments on hazardous environmental exposures (chemical and microbial), and works to identify and quantify the health effects of these pollutants. Projects support the Environmental Protection Agency (EPA), the National Institute of Environmental Health Sciences (NIEHS), and the American Chemistry Council. During my current pursuit of a graduate degree, I have continued part-time work for ICF.
 
-I like [google](https://www.google.com). 
+I have substantial experience with supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. 
 
-I can link direction to my [about page](about.html).
-
-link to dashboard [dashboard](dashboard_template.Rmd)
 
 # Contact Information
 
@@ -32,10 +29,6 @@ Email: dm3175@columbia.edu
 
 <img src="images/machu.jpg" style="width:75%">
 
-## Added Code
+# Homework 4 Plotly Dashboard
 
-My code page is [code page](code.html).
-
-# Added plotly
-
-This page has [plotly graphs](plotly.html).
+The plotly dashboard for Homework 4 list located here: [dashboard](dashboard_template.html)
