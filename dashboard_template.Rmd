@@ -48,11 +48,13 @@ instacart_data %>%
   plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
 ```
 
-### Chart C
+### Boxplots Comparing Order Hour of Day Distributions by Aisle
 
 ```{r}
 instacart_data %>%
-  filter(department == "bakery")
+  filter(department == "bakery") %>% 
+  plot_ly(y = ~order_hour_of_day, color = ~aisle, type = "box",
+          colors = "Set2")
 
 ```
 
