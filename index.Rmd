@@ -14,8 +14,7 @@ I am currently an MS candidate in Epidemiology at Columbia University Mailman Sc
 
 Following graduation, I worked for two years as a Health Sciences Analyst at ICF, a technical consulting firm. The Health Sciences Practice (within the Data Science and Survey Research Division) provides epidemiological, toxicological, risk and exposure assessments on hazardous environmental exposures (chemical and microbial), and works to identify and quantify the health effects of these pollutants. Projects support the Environmental Protection Agency (EPA), the National Institute of Environmental Health Sciences (NIEHS), and the American Chemistry Council. During my current pursuit of a graduate degree, I have continued part-time work for ICF.
 
-I have substantial experience with supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. 
-
+I have substantial experience with supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. My research interests include investigating the impact of environmental, genetic, and nutritional factors on health outcomes (particularly chronic disease).  
 
 # Contact Information
 
@@ -25,10 +24,6 @@ Email: dm3175@columbia.edu
 
 [Linkedin](https://www.linkedin.com/in/devonmorgan533/)
 
-## Picture embedded 
-
-<img src="images/machu.jpg" style="width:75%">
-
 # Homework 4 Plotly Dashboard
 
-The plotly dashboard for Homework 4 list located here: [dashboard](dashboard_template.html)
+The plotly dashboard for Homework 4 is located here: [dashboard](dashboard_template.html)
