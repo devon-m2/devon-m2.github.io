@@ -6,12 +6,13 @@ output:
     vertical_layout: fill
 ---
 
-```{r setup, include=FALSE}
+```{r dashboard setup, include=FALSE}
 library(flexdashboard)
 library(tidyverse)
 library(viridis)
 library(p8105.datasets)
 library(plotly)
+
 ```
 
 ```{r}
@@ -19,22 +20,22 @@ instacart_data = p8105.datasets::instacart %>%
     janitor::clean_names()
 ```
 
-Column {data-width=650}
+Column {data-width=600}
 -----------------------------------------------------------------------
 
-### Chart A
+### Count of Number of Items Ordered Each Hour of Day by Bakery Aisle
 
 ```{r}
 instacart_data %>%
-  filter(department == "bakery" & aisle == "bakery desserts") %>%
-  group_by(order_hour_of_day) %>% 
+  filter(department == "bakery" & order_dow == 0) %>% 
+  group_by(aisle, order_hour_of_day) %>% 
   mutate(n = n()) %>% 
-  plot_ly(x = ~order_hour_of_day, y = ~n, type = "scatter", mode = "lines",
+  plot_ly(x = ~order_hour_of_day, y = ~n, type = "scatter", mode = "line",
           alpha = 0.5, 
-          color = ~order_dow)
+          color = ~aisle)
 ```
 
-Column {data-width=350}
+Column {data-width=400}
 -----------------------------------------------------------------------
 
 ### Barchart Of The Total Number of Items Ordered Per Aisle in Bakery Department 
@@ -48,7 +49,7 @@ instacart_data %>%
   plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar")
 ```
 
-### Boxplots Comparing Order Hour of Day Distributions by Aisle
+### Boxplots Comparing Distributions of Order Hour of Day by Bakery Aisle
 
 ```{r}
 instacart_data %>%
