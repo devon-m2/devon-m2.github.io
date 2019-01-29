@@ -9,6 +9,10 @@ output:
 
 <img src="images/headshot.jpg" style="width:25%">
 
+I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins University in 2016 with a BA in Biology (minor in Pyschology). I have substantial experience supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. My research interests include the intersection between epidemiology and data science, and investigating the impact of environmental, genetic, and nutritional factors on health outcomes (particularly chronic disease).
+
+Please see the [Experience](experience.html) tab to learn more about my education and professional experience. 
+
 # Contact Information
 
 Devon Morgan
