@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -25,9 +25,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -75,9 +74,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -91,7 +88,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -101,6 +97,9 @@ img {
 }
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -116,7 +115,6 @@ body {
   padding-top: 65px;
   margin-top: -65px;
 }
-
 .section h2 {
   padding-top: 65px;
   margin-top: -65px;
@@ -136,6 +134,43 @@ body {
 .section h6 {
   padding-top: 65px;
   margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -157,47 +192,66 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -211,6 +265,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -246,8 +306,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -256,6 +314,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -316,21 +384,13 @@ div.tocify {
 </div>
 
 
-<div id="about" class="section level1">
-<h1>About</h1>
-<p>I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins University in 2016 with a BA in Biology (minor in Pyschology). I pursued an interdisciplinary course of study focused on molecular and cellular biology, psychology and public health.</p>
-<p>Following graduation, I worked for two years as a Health Sciences Analyst at ICF, a technical consulting firm. The Health Sciences Practice (within the Data Science and Survey Research Division) provides epidemiological, toxicological, risk and exposure assessments on hazardous environmental exposures (chemical and microbial), and works to identify and quantify the health effects of these pollutants. Projects support the Environmental Protection Agency (EPA), the National Institute of Environmental Health Sciences (NIEHS), and the American Chemistry Council. During my current pursuit of a graduate degree, I have continued part-time work for ICF.</p>
-<p>I have substantial experience supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. My research interests include investigating the impact of environmental, genetic, and nutritional factors on health outcomes (particularly chronic disease).</p>
-</div>
 <div id="education" class="section level1">
 <h1>Education</h1>
-<div id="columbia-university-mailman-school-of-public-health-master-of-science-ms-candidate-in-epidemiology-expected-2020" class="section level4">
-<h4><strong>Columbia University, Mailman School of Public Health</strong>: Master of Science (MS) Candidate in Epidemiology, Expected 2020</h4>
-<p><strong>Relevant Coursework</strong>: Principles of Epidemiology I, Introduction to Biostatistical Methods, Data Science I, Cancer Epidemiology, Analysis of Categorical Data, Epidemiology II: Design and Conduct of Observational Epidemiology, Applications of Epi Research Methods (SAS)</p>
+<div id="columbia-university-mailman-school-of-public-health-master-of-science-ms-in-epidemiology-2020" class="section level4">
+<h4><strong>Columbia University, Mailman School of Public Health</strong>: Master of Science (MS) in Epidemiology, 2020</h4>
 </div>
 <div id="johns-hopkins-university-bachelor-of-arts-ba-in-biology-minor-in-psychology-phi-beta-kappa-2016" class="section level4">
 <h4><strong>Johns Hopkins University</strong>: Bachelor of Arts (BA) in Biology (minor in Psychology), Phi Beta Kappa, 2016</h4>
-<p><strong>Relevant Coursework</strong>: Cell Biology, Genetics, Microbiology, Developmental Biology, Biochemistry, Organic Chemistry, Behavioral Endocrinology, Human Nutrition, Outbreak Investigations, Cognitive Development and Neuropsychology, Statistics and Calculus.</p>
 </div>
 <div id="kings-college-london-study-abroad-spring-2015" class="section level4">
 <h4><strong>King’s College London</strong>: Study Abroad, Spring 2015</h4>
@@ -339,15 +399,6 @@ div.tocify {
 <div id="publications" class="section level1">
 <h1>Publications</h1>
 <p>Yelskaya Z, Carrillo V, Dubisz E, Gulzar H, <strong>Morgan D</strong>, et al. (2013) Synergistic Inhibition of Survival, Proliferation, and Migration of U87 Cells with a Combination of LY341495 and Iressa. PLOS ONE 8(5): e64588. <a href="https://doi.org/10.1371/journal.pone.0064588" class="uri">https://doi.org/10.1371/journal.pone.0064588</a></p>
-</div>
-<div id="selected-projects" class="section level1">
-<h1>Selected Projects</h1>
-<ol style="list-style-type: decimal">
-<li><h4 id="gun-violence-in-the-united-states-final-project-for-data-science-i."><strong><a href="https://eshea6.github.io/us_gun_violence.github.io/">Gun Violence in the United States</a></strong>: Final project for Data Science I.</h4>
-<h5 id="objective-gun-violence-has-been-of-increasing-concern-across-the-united-states-over-the-past-decade.-our-objective-was-to-develop-an-online-resource-to-explore-general-trends-in-gun-violence-and-identify-any-important-variables-associated-with-gun-violence-incidence.-the-target-audience-for-this-webpage-includes-the-general-public-gun-control-activists-and-legislators.-the-goal-of-this-resource-is-to-raise-awareness-on-the-widespread-impact-of-gun-violence-and-inform-future-public-health-interventions-and-policy-changes."><strong>Objective</strong>: Gun violence has been of increasing concern across the United States over the past decade. Our objective was to develop an online resource to explore general trends in gun violence and identify any important variables associated with gun violence incidence. The target audience for this webpage includes the general public, gun control activists, and legislators. The goal of this resource is to raise awareness on the widespread impact of gun violence, and inform future public health interventions and policy changes.</h5>
-<h5 id="the-final-supporting-report-describing-methodology-results-and-supporting-code-is-also-available.">The <strong><a href="https://github.com/devon-m2/p8105_Gun-Violence_Final-Report">Final Supporting Report</a></strong> describing methodology, results and supporting code is also available.</h5></li>
-<li><h4 id="an-example-plotly-dashboard-is-available-here-dashboard">An example plotly dashboard is available here: <a href="dashboard_template.html">dashboard</a></h4></li>
-</ol>
 </div>
 
 
@@ -368,6 +419,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

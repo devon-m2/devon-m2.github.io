@@ -6,33 +6,13 @@ output:
     toc_float: true
 ---
 
-# About
-
-I am currently an MS candidate in Epidemiology at Columbia University Mailman School of Public Health. I graduated Phi Beta Kappa from Johns Hopkins University in 2016 with a BA in Biology (minor in Pyschology). I pursued an interdisciplinary course of study focused on molecular and cellular biology, psychology and public health.
-
-Following graduation, I worked for two years as a Health Sciences Analyst at ICF, a technical consulting firm. The Health Sciences Practice (within the Data Science and Survey Research Division) provides epidemiological, toxicological, risk and exposure assessments on hazardous environmental exposures (chemical and microbial), and works to identify and quantify the health effects of these pollutants. Projects support the Environmental Protection Agency (EPA), the National Institute of Environmental Health Sciences (NIEHS), and the American Chemistry Council. During my current pursuit of a graduate degree, I have continued part-time work for ICF.
-
-I have substantial experience supporting various stages of systematic literature reviews, project management, technical writing, and data extraction, cleaning and management. My research interests include investigating the impact of environmental, genetic, and nutritional factors on health outcomes (particularly chronic disease).  
-
 # Education
 
-#### **Columbia University, Mailman School of Public Health**: Master of Science (MS) Candidate in Epidemiology, Expected 2020
-
-**Relevant Coursework**: Principles of Epidemiology I, Introduction to Biostatistical Methods, Data Science I, Cancer Epidemiology, Analysis of Categorical Data, Epidemiology II: Design and Conduct of Observational Epidemiology, Applications of Epi Research Methods (SAS)
+#### **Columbia University, Mailman School of Public Health**: Master of Science (MS) in Epidemiology, 2020
 
 #### **Johns Hopkins University**: Bachelor of Arts (BA) in Biology (minor in Psychology), Phi Beta Kappa, 2016
-
-**Relevant Coursework**: Cell Biology, Genetics, Microbiology, Developmental Biology, Biochemistry, Organic Chemistry, Behavioral Endocrinology, Human Nutrition, Outbreak Investigations, Cognitive Development and Neuropsychology, Statistics and Calculus.
 
 #### **King's College London**: Study Abroad, Spring 2015
 
 # Publications
 Yelskaya Z, Carrillo V, Dubisz E, Gulzar H, **Morgan D**, et al. (2013) Synergistic Inhibition of Survival, Proliferation, and Migration of U87 Cells with a Combination of LY341495 and Iressa. PLOS ONE 8(5): e64588. https://doi.org/10.1371/journal.pone.0064588
-
-# Selected Projects
-
-1. #### **[Gun Violence in the United States](https://eshea6.github.io/us_gun_violence.github.io/)**: Final project for Data Science I. 
-##### **Objective**: Gun violence has been of increasing concern across the United States over the past decade. Our objective was to develop an online resource to explore general trends in gun violence and identify any important variables associated with gun violence incidence. The target audience for this webpage includes the general public, gun control activists, and legislators. The goal of this resource is to raise awareness on the widespread impact of gun violence, and inform future public health interventions and policy changes.
-##### The **[Final Supporting Report](https://github.com/devon-m2/p8105_Gun-Violence_Final-Report)** describing methodology, results and supporting code is also available. 
-
-1. #### An example plotly dashboard is available here: [dashboard](dashboard_template.html)
