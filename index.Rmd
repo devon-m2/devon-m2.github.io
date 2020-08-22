@@ -5,11 +5,13 @@ output:
 ---
 #### Epidemiology | Data Analysis | Project Management | Columbia and Johns Hopkins Graduate
 
-I recently completed a Master of Science (MS) in Epidemiology at Columbia University Mailman School of Public Health. I previously graduated Phi Beta Kappa from Johns Hopkins University with a BA in Biology (minor in Pyschology). 
+Welcome! I am an epidemiologist interested in applying my knowledge of epidemiological methods, study design and data analysis to the real world evidence/pharmacoepidemiology space. I have substantial experience in epidemiological research (with a focus on cancer epidemiology), data analysis, technical writing, systematic reviews, and project management.
 
-I have substantial experience in epidemiological research (particularly cancer epi), data analysis, technical writing, systematic reviews, and project management.
+I recently completed a Master of Science (MS) degree in Epidemiology at Columbia University Mailman School of Public Health. I previously graduated Phi Beta Kappa from Johns Hopkins University with a BA in Biology (minor in Psychology). 
 
 Please see the [Experience](experience.html) tab to learn more about my education and professional experience. 
+
+When I am not working, you can find me trying a new recipe, at an art museum, running, or exploring in my latest hobby - bird watching.
 
 # Contact Information
 
