@@ -3,8 +3,6 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "Experience"
-      href: experience.html 
     - text: "Linkedin"
       href: https://www.linkedin.com/in/devonmorgan533 
     - icon: fa-envelope fa-lg
